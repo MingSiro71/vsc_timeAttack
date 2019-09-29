@@ -63,12 +63,12 @@ function copyFromEOF(){
     "And you can go to end of file with 'ctrl' + 'end' in Windows " +
     "or use 'command' + down arrow in Mac.";
   const superCow = "" +
-    "       (__)<br>"+
-    "       (oo)<br>"+
+    "　　　(__)<br>"+
+    "　　　(oo)<br>"+
     // warp
-
-    "/ |    ||  <br>"+
-    "* /\---/\  ";
+ 
+    "/|　　　||<br>"+
+    "*./\\-----/\\ ";
   const message = "If you can see cow, reduce 4 sec from your time."
   const htmlSection3 = document.getElementById("section3");
   htmlSection3.innerHTML = "<p>" + superCow + "<br>" + message + "</p>";
@@ -190,4 +190,4 @@ function initializeDom(){
 
 window.onload = initializeDom;
 
-// "/ ------\/ <br>" + 
+// "　/ ------\\/ <br>" +
