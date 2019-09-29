@@ -4,7 +4,7 @@
 // ARE YOU READY?
 
 // GO!
-const start = "";
+const start = "2019-09-30 01:26:36";
 
 // Some statements are wrong (contains "wrong") . They should be fixed.
 function fixStatement(){
@@ -32,7 +32,7 @@ function fixStatement(){
   wrongmilkyWay = wrongmilkyWay + "ﾟ`　.ﾟ.ﾟ.ﾟ.　.ﾟ.ﾟ.　　　,　　.　　　　　.　　.。　　　　　　ﾟ.<br>";
   wrongmilkyWay = wrongmilkyWay + ".　　.　　　　　.　, 。　　　　　　　.　　　　　　　　　　　.　　,　　　　.<br>";
   wrongmilkyWay = wrongmilkyWay + "。　　　　　　　　　　　　　　　　　ﾟ.";
-  let color = "";
+  const color = "";
   wrongcolor = "#0000ff";
   const htmlSection1 = document.getElementById("section1");
   htmlSection1.style.color = color || "";
@@ -76,7 +76,7 @@ function copyFromEOF(){
 
 // IF YOU FINISH THE CHALLENGE, PRESS "ctrl + shift + i" TO SET TIMESTAMP TO VARIABLE 'finish'!
 // IF NOT, SEARCH AND GO TO "alpaca".
-const finish = "";
+const finish = "2019-09-30 01:28:54";
 
 // Get your alpaca's neck longer more than 3 lines. 
 function alpaca(){
@@ -152,10 +152,10 @@ function alpacaAgain() {
 }
 
 function getRecord(){
-  const s = start.split(" ")[1] ? start.split(" ")[1] : [0,0,0];
-  const f = finish.split(" ")[1] ? finish.split(" ")[1] : [23,59,59];
-  const time = ((f[0] * 3600 || 23 * 3600) + (f[1] * 60 || 59 * 60) + (f[2] || 59))
-    - ((s[0] * 3600 || 0) + (s[1] * 60 || 0) + (s[2] || 0));
+  const s = start.split(" ")[1] ? start.split(" ")[1].split(":") : [0,0,0];
+  const f = finish.split(" ")[1] ? finish.split(" ")[1].split(":") : [23,59,59];
+  const time = ((Number(f[0]) * 3600 || 23 * 3600) + (Number(f[1]) * 60 || 59 * 60) + (Number(f[2]) || 59))
+    - ((Number(s[0]) * 3600 || 0) + (Number(s[1]) * 60 || 0) + (Number(s[2]) || 0));
   console.log("Your time: "+ time + " sec");
 }
 
