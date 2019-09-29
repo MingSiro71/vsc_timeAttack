@@ -32,7 +32,7 @@ function fixStatement(){
   wrongmilkyWay = wrongmilkyWay + "ﾟ`　.ﾟ.ﾟ.ﾟ.　.ﾟ.ﾟ.　　　,　　.　　　　　.　　.。　　　　　　ﾟ.<br>";
   wrongmilkyWay = wrongmilkyWay + ".　　.　　　　　.　, 。　　　　　　　.　　　　　　　　　　　.　　,　　　　.<br>";
   wrongmilkyWay = wrongmilkyWay + "。　　　　　　　　　　　　　　　　　ﾟ.";
-  const color = "";
+  let color = "";
   wrongcolor = "#0000ff";
   const htmlSection1 = document.getElementById("section1");
   htmlSection1.style.color = color || "";
