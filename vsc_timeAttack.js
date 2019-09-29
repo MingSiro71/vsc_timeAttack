@@ -4,7 +4,7 @@
 // ARE YOU READY?
 
 // GO!
-const start = "2019-09-30 01:26:36";
+const start = "";
 
 // Some statements are wrong (contains "wrong") . They should be fixed.
 function fixStatement(){
@@ -76,7 +76,7 @@ function copyFromEOF(){
 
 // IF YOU FINISH THE CHALLENGE, PRESS "ctrl + shift + i" TO SET TIMESTAMP TO VARIABLE 'finish'!
 // IF NOT, SEARCH AND GO TO "alpaca".
-const finish = "2019-09-30 01:28:54";
+const finish = "";
 
 // Get your alpaca's neck longer more than 3 lines. 
 function alpaca(){
